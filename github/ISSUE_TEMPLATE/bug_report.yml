@@ -1,0 +1,47 @@
+name: 🐞 Bug Report
+description: Report an issue or unexpected behavior
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve **reingenerdet studio**!
+        Please fill out the following details so we can reproduce and fix the bug.
+  - type: input
+    id: summary
+    attributes:
+      label: Short summary
+      description: Briefly describe the bug
+      placeholder: "The export crashes when..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce the issue?
+      placeholder: "1. Open...\n2. Click...\n3. See error"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened?
+  - type: input
+    id: version
+    attributes:
+      label: Version / Build
+      description: Which version or build were you using?
+      placeholder: "Early Access v0.1.2"
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other information (screenshots, logs, etc.)
