@@ -1,0 +1,41 @@
+name: 💡 Feature Request
+description: Suggest a new idea or improvement
+title: "[Feature]: "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea to make **reingenerdet studio** better? Share it here!
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe your feature idea
+      placeholder: "Add support for..."
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why do you need this feature? What problem does it solve?
+      placeholder: "This would help me because..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: How would you like this feature to work?
+      placeholder: "I imagine it could work like..."
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Did you consider other solutions or workarounds?
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add any other information (mockups, screenshots, etc.)
